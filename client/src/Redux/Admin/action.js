@@ -4,7 +4,7 @@ import axios from 'axios'
 
 export const getUsers = (token) => (dispatch) =>{
     dispatch({type:ADMINREQUEST});
-    axios.get(`http://localhost:8080/users/`,{
+    axios.get(`https://lms-website-loil.onrender.com/users/`,{
          headers:{
         'Content-Type' : "application/json",
         authorization  : `Bearer ${token}`
@@ -22,7 +22,7 @@ export const getUsers = (token) => (dispatch) =>{
 export const makeAdminFunction = (id,token) => (dispatch) =>{
     dispatch({type:ADMINREQUEST});
    
-    axios.put(`http://localhost:8080/users/users/${id}`, {},{
+    axios.put(`https://lms-website-loil.onrender.com/users/${id}`, {},{
          headers:{
         'Content-Type' : "application/json",
         authorization  : `Bearer ${token}`
