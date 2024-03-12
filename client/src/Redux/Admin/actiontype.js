@@ -1,0 +1,7 @@
+
+
+export const ADMINREQUEST = "ADMINREQUEST";
+export const ADMINGETSUCCESS = "ADMINGETSUCCESS";
+export const ADMINFAILURE = "ADMINFAILURE";
+
+export const MAKEADMIN = "MAKEADMIN"
